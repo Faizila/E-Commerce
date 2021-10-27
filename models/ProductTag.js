@@ -1,9 +1,13 @@
+// import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 
+// import our database connection from config.js
 const sequelize = require('../config/connection');
 
+// Create a new Sequelize model for ProductTag
 class ProductTag extends Model {}
 
+// set up fields and rules for ProductTag model
 ProductTag.init(
   {
     // define columns
@@ -29,7 +33,9 @@ ProductTag.init(
     }
   },
   {
+    // Link to database connection
     sequelize,
+    // Set to false to remove `created_at` and `updated_at` fields
     timestamps: false,
     freezeTableName: true,
     underscored: true,
