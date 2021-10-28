@@ -6,16 +6,40 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // routes
 
-// get all products .findAll
-router.get('/', (req, res) => {
-  // find all products
-  // be sure to include its associated Category and Tag data
+router.get('/', async (req, res) => {
+  try {
+    // find all products .findAll
+    const prodData = await Product.findAll({
+      // its associated Category and Tag data
+      include: [{ model: Category } , { model: Tag }],
+    });
+    // success
+    res.status(200).json(prodData);
+  } 
+  // catch error
+  catch (err) {
+    res.status(500).json(err);
+  }
 });
 
-// get one product .findOne
-router.get('/:id', (req, res) => {
-  // find a single product by its `id`
-  // be sure to include its associated Category and Tag data
+router.get('/:id', async (req, res) => {
+  try {
+    // find a single product by its `id` primary key .findByPk
+    const prodData = await Product.findByPk(req.params.id, {
+      // its associated Category and Tag data
+      include: [{ model: Category } , { model: Tag }],
+    });
+// message for client
+    if (!prodData) {
+      res.status(404).json({ message: 'No Product found with that id!' });
+      return;
+    }
+// success
+    res.status(200).json(prodData);
+    // catch error
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // create new product .create
@@ -92,9 +116,24 @@ router.put('/:id', (req, res) => {
     });
 });
 
-// .findByPk
-router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+// .destory by id
+router.delete('/:id', async (req, res) => {
+  try {
+   // delete one product by its `id` value
+    const prodData = await Product.destroy({
+      where: { id: req.params.id }
+    });
+    // message for client
+    if (!prodData) {
+      res.status(404).json({ message: 'No Product with this id!' });
+      return;
+    }
+    // success
+    res.status(200).json(prodData);
+    // catch error
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 // export
