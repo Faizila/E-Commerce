@@ -55,4 +55,5 @@ Product.init(
   }
 );
 
+// export
 module.exports = Product;

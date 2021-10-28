@@ -44,4 +44,5 @@ ProductTag.init(
   }
 );
 
+// export
 module.exports = ProductTag;
