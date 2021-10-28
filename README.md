@@ -20,7 +20,7 @@ Object-Relational Mapping (ORM): E-Commerce Back End
 
 * Uses the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
 
-* Uses the [Express package](https://www.npmjs.com/package/express)
+* Uses the [Express package](https://www.npmjs.com/package/express) to specify what function is called for a particular HTTP verb ( GET , POST , PUT , etc.) 
 
 * Uses the [MySQL2 package](https://www.npmjs.com/package/mysql2) to connect to MySQL database and perform queries.
 
