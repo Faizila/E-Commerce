@@ -57,6 +57,9 @@ The application will be invoked by using the following command:
 ```bash
 npm start
 ```
+See a walkthrough video here:
+<br>
+https://github.com/Faizila/E-Commerce/blob/main/Assets/start.gif
 
 # Link
 
