@@ -6,10 +6,18 @@ const { Category, Product } = require('../../models');
 
 // routes
 
+ // find all categories
+// be sure to include its associated Products
 // .findAll
 router.get('/', (req, res) => {
-  // find all categories
-  // be sure to include its associated Products
+  //  try {
+  //   const productData = await Product.findAll();
+  //   import: [{ Model: }]
+  //   res.status(200).json(productData);
+  // } 
+  // catch (err) {
+  //   res.status(500).json(err);
+  // }
 });
 
 // .findByPk
