@@ -4,7 +4,7 @@ Object-Relational Mapping (ORM): E-Commerce Back End
 
 # Description
 
-
+The back end for an e-commerce site.
 
 # Table of Contents
 
