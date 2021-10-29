@@ -67,9 +67,7 @@ Refer to Video section for walkthrough video link on functionality.
 
 # Screenshots
 
-![Cat](https://user-images.githubusercontent.com/78191579/139337962-afe93cef-0fcf-4c72-8d8e-d8df91b5eb13.JPG)
-![Prod](https://user-images.githubusercontent.com/78191579/139337966-2b952711-b5fa-4e4a-9b13-a40b7984a156.JPG)
-![Tag](https://user-images.githubusercontent.com/78191579/139337971-6be6cc40-628f-4c04-9a61-1f35206d38fd.JPG)
+
 
 # Video
 
