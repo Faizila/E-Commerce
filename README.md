@@ -4,7 +4,7 @@ Object-Relational Mapping (ORM): E-Commerce Back End
 
 # Description
 
-The back end for an e-commerce site.
+The back end for an e-commerce site that keeps track of products.
 
 # Table of Contents
 
@@ -69,13 +69,17 @@ Refer to Video section for walkthrough video link on functionality.
 
 ![npmstart](https://user-images.githubusercontent.com/78191579/139357444-8ee173ee-f9f1-43dc-8967-6c05d130907a.JPG)
 
-
-
 # Video
 
 See a walkthrough video demonstrating the functionality of the application here:
 <br>
-
+https://github.com/Faizila/E-Commerce/blob/main/Assets/start.gif
+<br>
+https://github.com/Faizila/E-Commerce/blob/main/Assets/Category.gif
+<br>
+https://github.com/Faizila/E-Commerce/blob/main/Assets/Tags.gif
+<br>
+https://github.com/Faizila/E-Commerce/blob/main/Assets/products.gif
 
 # Questions
 
