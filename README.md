@@ -67,6 +67,8 @@ Refer to Video section for walkthrough video link on functionality.
 
 # Screenshots
 
+![npmstart](https://user-images.githubusercontent.com/78191579/139357444-8ee173ee-f9f1-43dc-8967-6c05d130907a.JPG)
+
 
 
 # Video
